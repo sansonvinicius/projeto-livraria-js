@@ -13,8 +13,15 @@ if(entradaInicial.toLocaleUpperCase()==='S'){
 
     const entradaCategoria = readline.question('Qual categoria está buscando?')
 
-    // busca todos os livros com a mesma categoria selecionada pelo usuário na database.js
+    //Busca todos os livros com a mesma categoria selecionada pelo usuário na database.js
     const retorno = livros.filter(livro => livro.categoria === entradaCategoria)
 
+    //Retorna os dados dos livros selecionados em forma de tabela
     console.table(retorno);
+//Caso o usuário digitar N mostrará uma lista ordenada de livros
+}else{
+    //Ordena os livros em ordem crescente de num de páginas
+    const livrosOrdenados = livros.sort((a,b)=>a.paginas - b.paginas )
+    console.log('Esses são todos os livros disponíveis:')
+    console.table(livrosOrdenados)
 }
