@@ -56,4 +56,4 @@ const livros = [
     }
 ]
 
-module.exports = "livros";
+module.exports = livros;
