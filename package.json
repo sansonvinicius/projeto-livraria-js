@@ -1,0 +1,23 @@
+{
+  "name": "projeto-livraria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sansonvinicius/projeto-livraria-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sansonvinicius/projeto-livraria-js/issues"
+  },
+  "homepage": "https://github.com/sansonvinicius/projeto-livraria-js#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
